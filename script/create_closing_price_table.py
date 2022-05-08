@@ -61,6 +61,7 @@ def main():
     closing_price_df = closing_price_df.drop('index', axis=1)
 
     # 出力
+    os.makedirs(os.path.join(OUTPUT_PATH), exist_ok=True)
     output_file_name = 'closing_price_' + datetime.now().strftime('%Y%m%d') + '.csv'
     closing_price_df.to_csv(os.path.join(OUTPUT_PATH, output_file_name), index=False)
 
