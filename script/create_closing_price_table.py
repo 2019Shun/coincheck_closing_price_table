@@ -35,7 +35,7 @@ def main():
             month_select.select_by_index(month_i)
             month_str = month_select.options[month_i].text
             print(year_str + '/' + month_str)
-            time.sleep(2)
+            time.sleep(3)
 
             # bs4によるテーブルの取得
             html = driver.page_source.encode('utf-8')
