@@ -13,6 +13,7 @@ import os
 
 ## ユーザー設定
 OUTPUT_PATH = '..\\csv'
+OUTPUT_FILE_NAME = 'closing_price.csv'
 TARGET_URL = 'https://coincheck.com/ja/exchange/closing_prices'
 
 def main():
